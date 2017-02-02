@@ -217,10 +217,10 @@ bool irr_IVideoDriver_setRenderTarget(irr_IVideoDriver* driver, irr_ITexture* te
     return reinterpret_cast<irr::video::IVideoDriver*>(driver)->setRenderTarget(reinterpret_cast<irr::video::ITexture*>(texture), clearBackBuffer, clearZBuffer, irr::video::SColor(color.a, color.b, color.g, color.r));
 }
 
-bool irr_IVideoDriver_setRenderTargetByEnum(irr_IVideoDriver* driver, E_RENDER_TARGET target, bool clearTarget, bool clearZBuffer, irr_SColor color)
-{
-    return reinterpret_cast<irr::video::IVideoDriver*>(driver)->setRenderTarget(irr::video::E_RENDER_TARGET(target), clearTarget, clearZBuffer, irr::video::SColor(color.a, color.b, color.g, color.r));
-}
+//bool irr_IVideoDriver_setRenderTargetByEnum(irr_IVideoDriver* driver, E_RENDER_TARGET target, bool clearTarget, bool clearZBuffer, irr_SColor color)
+//{
+//    return reinterpret_cast<irr::video::IVideoDriver*>(driver)->setRenderTarget(irr::video::E_RENDER_TARGET(target), clearTarget, clearZBuffer, irr::video::SColor(color.a, color.b, color.g, color.r));
+//}
 
 void irr_IVideoDriver_setViewPort(irr_IVideoDriver* driver, irr_recti area)
 {
