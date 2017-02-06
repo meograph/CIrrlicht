@@ -74,8 +74,14 @@ struct irr_IAnimatedMesh;
 typedef struct irr_IAnimatedMesh irr_IAnimatedMesh;
 
 struct irr_IMesh;
+typedef struct irr_IMesh irr_IMesh;
 
 CIRRLICHT_API unsigned int irr_IAnimatedMesh_getFrameCount(irr_IAnimatedMesh* mesh);
 CIRRLICHT_API float irr_IAnimatedMesh_getAnimationSpeed(irr_IAnimatedMesh* mesh);
 CIRRLICHT_API void irr_IAnimatedMesh_setAnimationSpeed(irr_IAnimatedMesh* mesh, float fps);
-CIRRLICHT_API irr_IMesh* irr_IAnimatedMesh_getMesh(irr_IAnimatedMesh* mesh, int frame, int detailLevel=255, int startFrameLoop=-1, int endFrameLoop=-1);
+
+const int DEF_DET_LEV = 255;
+const int DEF_START_FRAME_LOOP = -1;
+const int DEF_END_FRAME_LOOP = -1;
+
+CIRRLICHT_API irr_IMesh* irr_IAnimatedMesh_getMesh(irr_IAnimatedMesh* mesh, int frame, int detailLevel, int startFrameLoop, int endFrameLoop);

@@ -211,3 +211,5 @@ enum E_MATERIAL_TYPE
     //! This value is not used. It only forces this enumeration to compile to 32 bit.
     EMT_FORCE_32BIT = 0x7fffffff
 };
+
+typedef enum E_MATERIAL_TYPE E_MATERIAL_TYPE;

@@ -40,6 +40,7 @@ enum E_VERTEX_TYPE
 	/** Usually used for tangent space normal mapping. */
 	EVT_TANGENTS
 };
+typedef enum E_VERTEX_TYPE E_VERTEX_TYPE;
 
 //! Array holding the built in vertex type names
 const char* const sBuiltInVertexTypeNames[] =

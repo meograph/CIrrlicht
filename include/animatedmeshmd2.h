@@ -26,6 +26,7 @@
 
 #pragma once
 
+#include <stdbool.h>
 #include "compileconfig.h"
 
 //! Types of standard md2 animations
@@ -56,9 +57,11 @@ enum EMD2_ANIMATION_TYPE
     EMAT_COUNT,
 };
 
+typedef enum EMD2_ANIMATION_TYPE EMD2_ANIMATION_TYPE;
+
 typedef struct irr_IAnimatedMeshMD2 irr_IAnimatedMeshMD2;
 
-CIRRLICHT_API void irr_IAnimatedMeshMD2_getFrameLoop(irr_IAnimatedMeshMD2* mesh, EMD2_ANIMATION_TYPE l, int& outBegin, int& outEnd, int& outFPS);
-CIRRLICHT_API bool irr_IAnimatedMeshMD2_getFrameLoopByName(irr_IAnimatedMeshMD2* mesh, const char* name, int& outBegin, int& outEnd, int& outFPS);
+CIRRLICHT_API void irr_IAnimatedMeshMD2_getFrameLoop(irr_IAnimatedMeshMD2* mesh, EMD2_ANIMATION_TYPE l, int* outBegin, int* outEnd, int* outFPS);
+CIRRLICHT_API bool irr_IAnimatedMeshMD2_getFrameLoopByName(irr_IAnimatedMeshMD2* mesh, const char* name, int* outBegin, int* outEnd, int* outFPS);
 CIRRLICHT_API int irr_IAnimatedMeshMD2_getAnimationCount(irr_IAnimatedMeshMD2* mesh);
 CIRRLICHT_API const char* irr_IAnimatedMeshMD2_getAnimationName(irr_IAnimatedMeshMD2* mesh, int nr);

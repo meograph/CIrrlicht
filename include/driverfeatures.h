@@ -142,3 +142,5 @@ enum E_VIDEO_DRIVER_FEATURE
     //! Only used for counting the elements of this enum
     EVDF_COUNT
 };
+
+typedef enum E_VIDEO_DRIVER_FEATURE E_VIDEO_DRIVER_FEATURE;

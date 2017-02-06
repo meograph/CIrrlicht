@@ -41,21 +41,33 @@ struct irr_IXMLWriter;
 struct irr_IAttributes;
 struct irr_IVideoDriver;
 
+typedef struct irr_IFileSystem irr_IFileSystem;
+typedef struct irr_IReadFile irr_IReadFile;
+typedef struct irr_IWriteFile irr_IWriteFile;
+typedef struct irr_IFileArchive irr_IFileArchive;
+typedef struct irr_IArchiveLoader irr_IArchiveLoader;
+typedef struct irr_IFileList irr_IFileList;
+typedef struct irr_IXMLReader irr_IXMLReader;
+typedef struct irr_IXMLReaderUTF8 irr_IXMLReaderUTF8;
+typedef struct irr_IXMLWriter irr_IXMLWriter;
+typedef struct irr_IAttributes irr_IAttributes;
+typedef struct irr_IVideoDriver irr_IVideoDriver;
+
 CIRRLICHT_API irr_IReadFile* irr_IFileSystem_createAndOpenFile(irr_IFileSystem* filesys, const char* filename);
-CIRRLICHT_API irr_IReadFile* irr_IFileSystem_createMemoryReadFile(irr_IFileSystem* filesys, const void* memory, int len, const char* fileName, bool deleteMemoryWhenDropped=false);
+CIRRLICHT_API irr_IReadFile* irr_IFileSystem_createMemoryReadFile(irr_IFileSystem* filesys, const void* memory, int len, const char* fileName, bool deleteMemoryWhenDropped);
 CIRRLICHT_API irr_IReadFile* irr_IFileSystem_createLimitReadFile(irr_IFileSystem* filesys, const char* fileName, irr_IReadFile* alreadyOpenedFile, long pos, long areaSize);
-CIRRLICHT_API irr_IWriteFile* irr_IFileSystem_createMemoryWriteFile(irr_IFileSystem* filesys, void* memory, int len, const char* fileName, bool deleteMemoryWhenDropped=false);
-CIRRLICHT_API irr_IWriteFile* irr_IFileSystem_createAndWriteFile(irr_IFileSystem* filesys, const char* filename, bool append=false);
-CIRRLICHT_API bool irr_IFileSystem_addFileArchive(irr_IFileSystem* filesys, const char* filename, bool ignoreCase=true,
-			bool ignorePaths=true,
-			E_FILE_ARCHIVE_TYPE archiveType=EFAT_UNKNOWN,
-			const char* password="",
-			irr_IFileArchive** retArchive=0);
-CIRRLICHT_API bool irr_IFileSystem_addFileArchive2(irr_IFileSystem* filesys, irr_IReadFile* file, bool ignoreCase=true,
-			bool ignorePaths=true,
-			E_FILE_ARCHIVE_TYPE archiveType=EFAT_UNKNOWN,
-			const char* password="",
-			irr_IFileArchive** retArchive=0);
+CIRRLICHT_API irr_IWriteFile* irr_IFileSystem_createMemoryWriteFile(irr_IFileSystem* filesys, void* memory, int len, const char* fileName, bool deleteMemoryWhenDropped);
+CIRRLICHT_API irr_IWriteFile* irr_IFileSystem_createAndWriteFile(irr_IFileSystem* filesys, const char* filename, bool append);
+CIRRLICHT_API bool irr_IFileSystem_addFileArchive(irr_IFileSystem* filesys, const char* filename, bool ignoreCase,
+			bool ignorePaths,
+			E_FILE_ARCHIVE_TYPE archiveType,
+			const char* password,
+			irr_IFileArchive** retArchive);
+CIRRLICHT_API bool irr_IFileSystem_addFileArchive2(irr_IFileSystem* filesys, irr_IReadFile* file, bool ignoreCase,
+			bool ignorePaths,
+			E_FILE_ARCHIVE_TYPE archiveType,
+			const char* password,
+			irr_IFileArchive** retArchive);
 CIRRLICHT_API bool irr_IFileSystem_addFileArchive3(irr_IFileSystem* filesys, irr_IFileArchive* archive);
 CIRRLICHT_API unsigned int irr_IFileSystem_getFileArchiveCount(irr_IFileSystem* filesys);
 CIRRLICHT_API bool irr_IFileSystem_removeFileArchive(irr_IFileSystem* filesys, unsigned int index);
@@ -70,8 +82,8 @@ CIRRLICHT_API const char* irr_IFileSystem_getWorkingDirectory(irr_IFileSystem* f
 CIRRLICHT_API bool irr_IFileSystem_changeWorkingDirectoryTo(irr_IFileSystem* filesys, const char* newDirectory);
 CIRRLICHT_API char* irr_IFileSystem_getAbsolutePath(irr_IFileSystem* filesys, const char* filename);
 CIRRLICHT_API char* irr_IFileSystem_getFileDir(irr_IFileSystem* filesys, const char* filename);
-CIRRLICHT_API char* irr_IFileSystem_getFileBasename(irr_IFileSystem* filesys, const char* filename, bool keepExtension=true);
-CIRRLICHT_API char* irr_IFileSystem_flattenFilename(irr_IFileSystem* filesys, char* directory, const char* root="/");
+CIRRLICHT_API char* irr_IFileSystem_getFileBasename(irr_IFileSystem* filesys, const char* filename, bool keepExtension);
+CIRRLICHT_API char* irr_IFileSystem_flattenFilename(irr_IFileSystem* filesys, char* directory, const char* root);
 CIRRLICHT_API char* irr_IFileSystem_getRelativeFilename(irr_IFileSystem* filesys, const char* filename, const char* directory);
 CIRRLICHT_API irr_IFileList* irr_IFileSystem_createFileList(irr_IFileSystem* filesys);
 CIRRLICHT_API irr_IFileList* irr_IFileSystem_createEmptyFileList(irr_IFileSystem* filesys, const char* path, bool ignoreCase, bool ignorePaths);
@@ -83,4 +95,4 @@ CIRRLICHT_API irr_IXMLReaderUTF8* irr_IFileSystem_createXMLReaderUTF8(irr_IFileS
 CIRRLICHT_API irr_IXMLReaderUTF8* irr_IFileSystem_createXMLReaderUTF82(irr_IFileSystem* filesys, irr_IReadFile* file);
 CIRRLICHT_API irr_IXMLWriter* irr_IFileSystem_createXMLWriter(irr_IFileSystem* filesys, const char* filename);
 CIRRLICHT_API irr_IXMLWriter* irr_IFileSystem_createXMLWriter2(irr_IFileSystem* filesys, irr_IWriteFile* file);
-CIRRLICHT_API irr_IAttributes* irr_IFileSystem_createEmptyAttributes(irr_IFileSystem* filesys, irr_IVideoDriver* driver=0);
+CIRRLICHT_API irr_IAttributes* irr_IFileSystem_createEmptyAttributes(irr_IFileSystem* filesys, irr_IVideoDriver* driver);

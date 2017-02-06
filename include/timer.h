@@ -39,6 +39,8 @@ enum EWeekday
 	EWD_SATURDAY
 };
 
+typedef enum EWeekday EWeekday;
+
 struct RealTimeDate
 {
 	// Hour of the day, from 0 to 23
@@ -60,6 +62,8 @@ struct RealTimeDate
 	// Whether daylight saving is on
 	bool IsDST;
 };
+
+typedef struct RealTimeDate RealTimeDate;
 	
 typedef struct irr_ITimer irr_ITimer;
 
@@ -69,7 +73,7 @@ CIRRLICHT_API unsigned int irr_ITimer_getTime(irr_ITimer* timer);
 CIRRLICHT_API void irr_ITimer_setTime(irr_ITimer* timer, unsigned int time);
 CIRRLICHT_API void irr_ITimer_stop(irr_ITimer* timer);
 CIRRLICHT_API void irr_ITimer_start(irr_ITimer* timer);
-CIRRLICHT_API void irr_ITimer_setSpeed(irr_ITimer* timer, float speed = 1.0f);
+CIRRLICHT_API void irr_ITimer_setSpeed(irr_ITimer* timer, float speed);
 CIRRLICHT_API float irr_ITimer_getSpeed(irr_ITimer* timer);
 CIRRLICHT_API bool irr_ITimer_isStopped(irr_ITimer* timer);
 CIRRLICHT_API void irr_ITimer_tick(irr_ITimer* timer);

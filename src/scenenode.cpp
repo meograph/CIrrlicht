@@ -32,9 +32,9 @@ void irr_ISceneNode_addAnimator(irr_ISceneNode* node, irr_ISceneNodeAnimator* an
     reinterpret_cast<irr::scene::ISceneNode*>(node)->addAnimator(reinterpret_cast<irr::scene::ISceneNodeAnimator*>(animator));
 }
 
-const irr_list& irr_ISceneNode_getAnimators(irr_ISceneNode* node)
+const irr_list* irr_ISceneNode_getAnimators(irr_ISceneNode* node)
 {
-    return reinterpret_cast<const irr_list&>(reinterpret_cast<irr::scene::ISceneNode*>(node)->getAnimators());
+    return &reinterpret_cast<const irr_list&>(reinterpret_cast<irr::scene::ISceneNode*>(node)->getAnimators());
 }
 
 void irr_ISceneNode_removeAnimator(irr_ISceneNode* node, irr_ISceneNodeAnimator* animator)
@@ -47,9 +47,9 @@ void irr_ISceneNode_removeAnimators(irr_ISceneNode* node)
     reinterpret_cast<irr::scene::ISceneNode*>(node)->removeAnimators();
 }
 
-const irr_SMaterial& irr_ISceneNode_getMaterial(irr_ISceneNode* node, unsigned int num)
+const irr_SMaterial* irr_ISceneNode_getMaterial(irr_ISceneNode* node, unsigned int num)
 {
-    return reinterpret_cast<const irr_SMaterial&>(reinterpret_cast<irr::scene::ISceneNode*>(node)->getMaterial(num));
+    return &reinterpret_cast<const irr_SMaterial&>(reinterpret_cast<irr::scene::ISceneNode*>(node)->getMaterial(num));
 }
 
 unsigned int irr_ISceneNode_getMaterialCount(irr_ISceneNode* node)
@@ -146,9 +146,9 @@ bool irr_ISceneNode_isDebugObject(irr_ISceneNode* node)
     return reinterpret_cast<irr::scene::ISceneNode*>(node)->isDebugObject();
 }
 
-const irr_list& irr_ISceneNode_getChildren(irr_ISceneNode* node)
+const irr_list* irr_ISceneNode_getChildren(irr_ISceneNode* node)
 {
-    return reinterpret_cast<const irr_list&>(reinterpret_cast<irr::scene::ISceneNode*>(node)->getChildren());
+    return &reinterpret_cast<const irr_list&>(reinterpret_cast<irr::scene::ISceneNode*>(node)->getChildren());
 }
 
 void irr_ISceneNode_setParent(irr_ISceneNode* node, irr_ISceneNode* newParent)

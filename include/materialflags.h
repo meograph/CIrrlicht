@@ -106,6 +106,8 @@ enum E_MATERIAL_FLAG
     EMF_BLEND_FACTOR = 0x160000
 };
 
+typedef enum E_MATERIAL_FLAG E_MATERIAL_FLAG;
+
 //! Array holding the built in material type names
 const char* const sBuiltInMaterialTypeNames[] =
 {

@@ -40,6 +40,7 @@ enum E_HARDWARE_MAPPING
     //! Always changed, cache optimizing on the GPU
     EHM_STREAM
 };
+typedef enum E_HARDWARE_MAPPING E_HARDWARE_MAPPING;
 
 enum E_BUFFER_TYPE
 {
@@ -52,3 +53,4 @@ enum E_BUFFER_TYPE
     //! Change both vertex and index mapping to the same value
     EBT_VERTEX_AND_INDEX
 };
+typedef enum E_BUFFER_TYPE E_BUFFER_TYPE;

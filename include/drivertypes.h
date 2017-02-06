@@ -71,3 +71,5 @@ enum E_DRIVER_TYPE
     //! No driver, just for counting the elements
     EDT_COUNT
 };
+
+typedef enum E_DRIVER_TYPE E_DRIVER_TYPE;

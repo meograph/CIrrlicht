@@ -78,6 +78,8 @@ enum E_TEXTURE_CREATION_FLAG
 	ETCF_FORCE_32_BIT_DO_NOT_USE = 0x7fffffff
 };
 
+typedef enum E_TEXTURE_CREATION_FLAG E_TEXTURE_CREATION_FLAG;
+
 //! Enum for the mode for texture locking. Read-Only, write-only or read/write.
 enum E_TEXTURE_LOCK_MODE
 {
@@ -94,6 +96,8 @@ enum E_TEXTURE_LOCK_MODE
 	ETLM_WRITE_ONLY
 };
 
+typedef enum E_TEXTURE_LOCK_MODE E_TEXTURE_LOCK_MODE;
+
 //! Where did the last IVideoDriver::getTexture call find this texture
 enum E_TEXTURE_SOURCE
 {
@@ -106,5 +110,7 @@ enum E_TEXTURE_SOURCE
 	//! Texture had to be loaded
 	ETS_FROM_FILE
 };
+
+typedef enum E_TEXTURE_SOURCE E_TEXTURE_SOURCE;
 
 typedef struct irr_ITexture irr_ITexture;

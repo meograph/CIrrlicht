@@ -36,6 +36,8 @@ enum EFileSystemType
 	FILESYSTEM_VIRTUAL	// Virtual FileSystem
 };
 
+typedef enum EFileSystemType EFileSystemType;
+
 //! Contains the different types of archives
 enum E_FILE_ARCHIVE_TYPE
 {
@@ -64,9 +66,15 @@ enum E_FILE_ARCHIVE_TYPE
 	EFAT_UNKNOWN = MAKE_CIRR_ID('u','n','k','n')
 };
 
+typedef enum E_FILE_ARCHIVE_TYPE E_FILE_ARCHIVE_TYPE;
+
 struct irr_IFileArchive;
 struct irr_IReadFile;
 struct irr_IFileList;
+
+typedef struct irr_IFileArchive irr_IFileArchive;
+typedef struct irr_IReadFile irr_IReadFile;
+typedef struct irr_IFileList irr_IFileList;
 
 CIRRLICHT_API irr_IReadFile* irr_IFileArchive_createAndOpenFile(irr_IFileArchive* filearchive, const char* filename);
 CIRRLICHT_API irr_IReadFile* irr_IFileArchive_createAndOpenFile2(irr_IFileArchive* filearchive, unsigned int index);
@@ -77,6 +85,7 @@ CIRRLICHT_API void irr_IFileArchive_setPassword(irr_IFileArchive* filearchive, c
 CIRRLICHT_API const char* irr_IFileArchive_getPassword(irr_IFileArchive* filearchive);
 
 struct irr_IArchiveLoader;
+typedef struct irr_IArchiveLoader irr_IArchiveLoader;
 
 CIRRLICHT_API bool irr_IArchiveLoader_isALoadableFileFormat(irr_IArchiveLoader* loader, const char* filename);
 CIRRLICHT_API bool irr_IArchiveLoader_isALoadableFileFormat2(irr_IArchiveLoader* loader, irr_IReadFile* file);

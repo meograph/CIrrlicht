@@ -48,9 +48,9 @@ void irr_IVideoDriver_disableFeature(irr_IVideoDriver* driver, E_VIDEO_DRIVER_FE
     reinterpret_cast<irr::video::IVideoDriver*>(driver)->disableFeature(irr::video::E_VIDEO_DRIVER_FEATURE(feature), flag);
 }
 
-const irr_Attributes& irr_IVideoDriver_getDriverAttributes(irr_IVideoDriver* driver)
+const irr_Attributes* irr_IVideoDriver_getDriverAttributes(irr_IVideoDriver* driver)
 {
-    return reinterpret_cast<const irr_Attributes&>(reinterpret_cast<irr::video::IVideoDriver*>(driver)->getDriverAttributes());
+    return &reinterpret_cast<const irr_Attributes&>(reinterpret_cast<irr::video::IVideoDriver*>(driver)->getDriverAttributes());
 }
 
 bool irr_IVideoDriver_checkDriverReset(irr_IVideoDriver* driver)

@@ -31,6 +31,6 @@
 struct irr_IWriteFile;
 
 CIRRLICHT_API int irr_IWriteFile_write(irr_IWriteFile* file, const void* buffer, unsigned int sizeToWrite);
-CIRRLICHT_API bool irr_IWriteFile_seek(irr_IWriteFile* file, long finalPos, bool relativeMovement=false);
+CIRRLICHT_API bool irr_IWriteFile_seek(irr_IWriteFile* file, long finalPos, bool relativeMovement);
 CIRRLICHT_API long irr_IWriteFile_getPos(irr_IWriteFile* file);
 CIRRLICHT_API const char* irr_IWriteFile_getFileName(irr_IWriteFile* file);

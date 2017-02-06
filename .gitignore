@@ -52,3 +52,4 @@ Release
 *.layout
 *.depend
 *.cscope_file_list
+xcode/cirrlicht.xcodeproj/xcuserdata

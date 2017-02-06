@@ -122,121 +122,164 @@ struct irr_ISkinnedMesh;
 struct irr_ILightManager;
 struct irr_IGeometryCreator;
 
+typedef struct irr_ITexture irr_ITexture;
+typedef struct irr_IMeshCache irr_IMeshCache;
+typedef struct irr_IVideoDriver irr_IVideoDriver;
+typedef struct irr_IGUIEnvironment irr_IGUIEnvironment;
+typedef struct irr_IFileSystem irr_IFileSystem;
+typedef struct irr_IVolumeLightSceneNode irr_IVolumeLightSceneNode;
+typedef struct irr_IMeshSceneNode irr_IMeshSceneNode;
+typedef struct irr_ISceneNode irr_ISceneNode;
+typedef struct irr_IAnimatedMeshSceneNode irr_IAnimatedMeshSceneNode;
+typedef struct irr_ICameraSceneNode irr_ICameraSceneNode;
+typedef struct irr_SKeyMap irr_SKeyMap;
+typedef struct irr_ILightSceneNode irr_ILightSceneNode;
+typedef struct irr_IBillboardSceneNode irr_IBillboardSceneNode;
+typedef struct irr_IParticleSystemSceneNode irr_IParticleSystemSceneNode;
+typedef struct irr_ITerrainSceneNode irr_ITerrainSceneNode;
+typedef struct irr_IMeshBuffer irr_IMeshBuffer;
+typedef struct irr_IShader irr_IShader;
+typedef struct irr_IDummyTransformationSceneNode irr_IDummyTransformationSceneNode;
+typedef struct irr_ITextSceneNode irr_ITextSceneNode;
+typedef struct irr_IGUIFont irr_IGUIFont;
+typedef struct irr_IBillboardTextSceneNode irr_IBillboardTextSceneNode;
+typedef struct irr_SMaterial irr_SMaterial;
+typedef struct irr_IImage irr_IImage;
+typedef struct irr_ISceneNodeAnimator irr_ISceneNodeAnimator;
+typedef struct irr_ISceneNodeAnimatorCollisionResponse irr_ISceneNodeAnimatorCollisionResponse;
+typedef struct irr_ITriangleSelector irr_ITriangleSelector;
+typedef struct irr_IMetaTriangleSelector irr_IMetaTriangleSelector;
+typedef struct irr_IMeshLoader irr_IMeshLoader;
+typedef struct irr_ISceneLoader irr_ISceneLoader;
+typedef struct irr_ISceneCollisionManager irr_ISceneCollisionManager;
+typedef struct irr_IMeshManipulator irr_IMeshManipulator;
+typedef struct irr_SEvent irr_SEvent;
+typedef struct irr_IAttributes irr_IAttributes;
+typedef struct irr_ISceneNodeFactory irr_ISceneNodeFactory;
+typedef struct irr_ISceneNodeAnimatorFactory irr_ISceneNodeAnimatorFactory;
+typedef struct irr_ISceneUserDataSerializer irr_ISceneUserDataSerializer;
+typedef struct irr_IMeshWriter irr_IMeshWriter;
+typedef struct irr_ISkinnedMesh irr_ISkinnedMesh;
+typedef struct irr_ILightManager irr_ILightManager;
+typedef struct irr_IGeometryCreator irr_IGeometryCreator;
+
+typedef struct irr_IMeshCache irr_IMeshCache;
+
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_getMesh(irr_ISceneManager* smgr, const char* file);
 CIRRLICHT_API irr_IMeshCache* irr_ISceneManager_getMeshCache(irr_ISceneManager* smgr);
 CIRRLICHT_API irr_IVideoDriver* irr_ISceneManager_getVideoDriver(irr_ISceneManager* smgr);
 CIRRLICHT_API irr_IGUIEnvironment* irr_ISceneManager_getGUIEnvironment(irr_ISceneManager* smgr);
 CIRRLICHT_API irr_IFileSystem* irr_ISceneManager_getFileSystem(irr_ISceneManager* smgr);
-CIRRLICHT_API irr_IVolumeLightSceneNode* irr_ISceneManager_addVolumeLightSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent=0, int id=-1, unsigned int subdivU = 32, unsigned int subdivV = 32, irr_SColor foot = {51, 0, 230, 180}, irr_SColor tail = {0, 0, 0, 0}, irr_vector3df position = {0,0,0}, irr_vector3df rotation = {0,0,0}, irr_vector3df scale = {1.0f, 1.0f, 1.0f});
-CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addCubeSceneNode(irr_ISceneManager* smgr, float size=10.0f, irr_ISceneNode* parent=0, int id=-1, irr_vector3df position = {0,0,0}, irr_vector3df rotation = {0,0,0}, irr_vector3df scale = {1.0f, 1.0f, 1.0f});
-CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addSphereSceneNode(irr_ISceneManager* smgr, float radius=5.0f, int polyCount=16, irr_ISceneNode* parent=0, int id=-1, irr_vector3df position = {0,0,0}, irr_vector3df rotation = {0,0,0}, irr_vector3df scale = {1.0f, 1.0f, 1.0f});
-CIRRLICHT_API irr_IAnimatedMeshSceneNode* irr_ISceneManager_addAnimatedMeshSceneNode(irr_ISceneManager* smgr, irr_IAnimatedMesh* mesh, irr_ISceneNode* parent=0, int id=-1, irr_vector3df position = {0,0,0}, irr_vector3df rotation = {0,0,0}, irr_vector3df scale = {1.0f, 1.0f, 1.0f}, bool alsoAddIfMeshPointerZero=false);
-CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addMeshSceneNode(irr_ISceneManager* smgr, irr_IMesh* mesh, irr_ISceneNode* parent=0, int id=-1, irr_vector3df position = {0,0,0}, irr_vector3df rotation = {0,0,0}, irr_vector3df scale = {1.0f, 1.0f, 1.0f}, bool alsoAddIfMeshPointerZero=false);
+CIRRLICHT_API irr_IVolumeLightSceneNode* irr_ISceneManager_addVolumeLightSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent, int id, unsigned int subdivU, unsigned int subdivV, irr_SColor foot, irr_SColor tail, irr_vector3df position, irr_vector3df rotation, irr_vector3df scale);
+CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addCubeSceneNode(irr_ISceneManager* smgr, float size, irr_ISceneNode* parent, int id, irr_vector3df position, irr_vector3df rotation, irr_vector3df scale);
+CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addSphereSceneNode(irr_ISceneManager* smgr, float radius, int polyCount, irr_ISceneNode* parent, int id, irr_vector3df position, irr_vector3df rotation, irr_vector3df scale);
+CIRRLICHT_API irr_IAnimatedMeshSceneNode* irr_ISceneManager_addAnimatedMeshSceneNode(irr_ISceneManager* smgr, irr_IAnimatedMesh* mesh, irr_ISceneNode* parent, int id, irr_vector3df position, irr_vector3df rotation, irr_vector3df scale, bool alsoAddIfMeshPointerZero);
+CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addMeshSceneNode(irr_ISceneManager* smgr, irr_IMesh* mesh, irr_ISceneNode* parent, int id, irr_vector3df position, irr_vector3df rotation, irr_vector3df scale, bool alsoAddIfMeshPointerZero);
 CIRRLICHT_API irr_ISceneNode* irr_ISceneManager_addWaterSurfaceSceneNode(irr_ISceneManager* smgr, irr_IMesh* mesh,
-        float waveHeight=2.0f, float waveSpeed=300.0f, float waveLength=10.0f,
-        irr_ISceneNode* parent=0, int id=-1,
-        irr_vector3df position = {0,0,0},
-        irr_vector3df rotation = {0,0,0},
-        irr_vector3df scale = {1.0f, 1.0f, 1.0f});
-CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addOctreeSceneNode(irr_ISceneManager* smgr, irr_IAnimatedMesh* mesh, irr_ISceneNode* parent=0,
-        int id=-1, int minimalPolysPerNode=512, bool alsoAddIfMeshPointerZero=false);
-CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addOctreeSceneNode2(irr_ISceneManager* smgr, irr_IMesh* mesh, irr_ISceneNode* parent=0,
-        int id=-1, int minimalPolysPerNode=256, bool alsoAddIfMeshPointerZero=false);
+        float waveHeight, float waveSpeed, float waveLength,
+        irr_ISceneNode* parent, int id,
+        irr_vector3df position,
+        irr_vector3df rotation,
+        irr_vector3df scale);
+CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addOctreeSceneNode(irr_ISceneManager* smgr, irr_IAnimatedMesh* mesh, irr_ISceneNode* parent,
+        int id, int minimalPolysPerNode, bool alsoAddIfMeshPointerZero);
+CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addOctreeSceneNode2(irr_ISceneManager* smgr, irr_IMesh* mesh, irr_ISceneNode* parent,
+        int id, int minimalPolysPerNode, bool alsoAddIfMeshPointerZero);
 
-CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_addCameraSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent, irr_vector3df pos, irr_vector3df lookAt, int id=-1, bool makeActive=true);
-CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_addCameraSceneNodeMaya(irr_ISceneManager* smgr, irr_ISceneNode* parent=0,
-        float rotateSpeed=-1500.f, float zoomSpeed=200.f,
-        float translationSpeed=1500.f, int id=-1, float distance=70.f,
-        bool makeActive=true);
+CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_addCameraSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent, irr_vector3df pos, irr_vector3df lookAt, int id, bool makeActive);
+CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_addCameraSceneNodeMaya(irr_ISceneManager* smgr, irr_ISceneNode* parent,
+        float rotateSpeed, float zoomSpeed,
+        float translationSpeed, int id, float distance,
+        bool makeActive);
 
-CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_addCameraSceneNodeFPS(irr_ISceneManager* smgr, irr_ISceneNode* parent = 0,
-        float rotateSpeed = 100.0f, float moveSpeed = 0.5f, int id=-1,
-        irr_SKeyMap* keyMapArray=0, int keyMapSize=0, bool noVerticalMovement=false,
-        float jumpSpeed = 0.f, bool invertMouse=false,
-        bool makeActive=true);
+CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_addCameraSceneNodeFPS(irr_ISceneManager* smgr, irr_ISceneNode* parent,
+        float rotateSpeed, float moveSpeed, int id,
+        irr_SKeyMap* keyMapArray, int keyMapSize, bool noVerticalMovement,
+        float jumpSpeed, bool invertMouse,
+        bool makeActive);
 
-CIRRLICHT_API irr_ILightSceneNode* irr_ISceneManager_addLightSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent = 0,
-        irr_vector3df position = {0,0,0},
-        irr_SColorf color = {1.0f, 1.0f, 1.0f},
-        float radius=100.0f, int id=-1);
+CIRRLICHT_API irr_ILightSceneNode* irr_ISceneManager_addLightSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent,
+        irr_vector3df position,
+        irr_SColorf color,
+        float radius, int id);
 
-CIRRLICHT_API irr_IBillboardSceneNode* irr_ISceneManager_addBillboardSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent = 0,
-        irr_dimension2df size = {10.0f, 10.0f},
-        irr_vector3df position = {0,0,0}, int id=-1,
-        irr_SColor colorTop = {0, 0, 0, 0}, irr_SColor colorBottom = {0, 0, 0, 0});
+CIRRLICHT_API irr_IBillboardSceneNode* irr_ISceneManager_addBillboardSceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent,
+        irr_dimension2df size,
+        irr_vector3df position, int id,
+        irr_SColor colorTop, irr_SColor colorBottom);
 
 CIRRLICHT_API irr_ISceneNode* irr_ISceneManager_addSkyBoxSceneNode(irr_ISceneManager* smgr, irr_ITexture* top, irr_ITexture* bottom,
         irr_ITexture* left, irr_ITexture* right, irr_ITexture* front,
-        irr_ITexture* back, irr_ISceneNode* parent = 0, int id=-1);
+        irr_ITexture* back, irr_ISceneNode* parent, int id);
 
 CIRRLICHT_API irr_ISceneNode* irr_ISceneManager_addSkyDomeSceneNode(irr_ISceneManager* smgr, irr_ITexture* texture,
-        unsigned int horiRes=16, unsigned int vertRes=8,
-        float texturePercentage=0.9, float spherePercentage=2.0,float radius = 1000.f,
-        irr_ISceneNode* parent=0, int id=-1);
+        unsigned int horiRes, unsigned int vertRes,
+        float texturePercentage, float spherePercentage,float radius,
+        irr_ISceneNode* parent, int id);
 
 CIRRLICHT_API irr_IParticleSystemSceneNode* irr_ISceneManager_addParticleSystemSceneNode(irr_ISceneManager* smgr,
-        bool withDefaultEmitter=true, irr_ISceneNode* parent=0, int id=-1,
-        irr_vector3df position = {0,0,0},
-        irr_vector3df rotation = {0,0,0},
-        irr_vector3df scale = {1.0f, 1.0f, 1.0f});
+        bool withDefaultEmitter, irr_ISceneNode* parent, int id,
+        irr_vector3df position,
+        irr_vector3df rotation,
+        irr_vector3df scale);
 
 CIRRLICHT_API irr_ITerrainSceneNode* irr_ISceneManager_addTerrainSceneNode(irr_ISceneManager* smgr,
         const char* heightMapFileName,
-        irr_ISceneNode* parent=0, int id=-1,
-        irr_vector3df position = {0.0f,0.0f,0.0f},
-        irr_vector3df rotation = {0.0f,0.0f,0.0f},
-        irr_vector3df scale = {1.0f,1.0f,1.0f},
-        irr_SColor vertexColor = {255,255,255,255},
-        int maxLOD=5, E_TERRAIN_PATCH_SIZE patchSize=ETPS_17, int smoothFactor=0,
-        bool addAlsoIfHeightmapEmpty = false);
+        irr_ISceneNode* parent, int id,
+        irr_vector3df position,
+        irr_vector3df rotation,
+        irr_vector3df scale,
+        irr_SColor vertexColor,
+        int maxLOD, E_TERRAIN_PATCH_SIZE patchSize, int smoothFactor,
+        bool addAlsoIfHeightmapEmpty);
 
 CIRRLICHT_API irr_IMeshSceneNode* irr_ISceneManager_addQuake3SceneNode(irr_ISceneManager* smgr, const irr_IMeshBuffer* meshBuffer, const irr_IShader * shader,
-        irr_ISceneNode* parent=0, int id=-1
+        irr_ISceneNode* parent, int id
                                                         );
 
 CIRRLICHT_API irr_ISceneNode* irr_ISceneManager_addEmptySceneNode(irr_ISceneManager* smgr, irr_ISceneNode* parent=0, int id=-1);
 
 CIRRLICHT_API irr_IDummyTransformationSceneNode* irr_ISceneManager_addDummyTransformationSceneNode(irr_ISceneManager* smgr,
-        irr_ISceneNode* parent=0, int id=-1);
+        irr_ISceneNode* parent, int id);
 
 CIRRLICHT_API irr_ITextSceneNode* irr_ISceneManager_addTextSceneNode(irr_ISceneManager* smgr, irr_IGUIFont* font, const wchar_t* text,
-        irr_SColor color= {100,255,255,255},
-        irr_ISceneNode* parent = 0, irr_vector3df position = {0,0,0},
+        irr_SColor color,
+        irr_ISceneNode* parent, irr_vector3df position,
         int id=-1);
 
 CIRRLICHT_API irr_IBillboardTextSceneNode* irr_ISceneManager_addBillboardTextSceneNode(irr_ISceneManager* smgr, irr_IGUIFont* font, const wchar_t* text,
-        irr_ISceneNode* parent = 0,
-        irr_dimension2df size = {10.0f, 10.0f},
-        irr_vector3df position = {0,0,0}, int id=-1,
-        irr_SColor colorTop = {0xFFFFFFFF>>24, (0xFFFFFFFF>>16) & 0xff, (0xFFFFFFFF>>8) & 0xff, 0xFFFFFFFF & 0xff}, irr_SColor colorBottom = {0xFFFFFFFF>>24, (0xFFFFFFFF>>16) & 0xff, (0xFFFFFFFF>>8) & 0xff, 0xFFFFFFFF & 0xff});
+        irr_ISceneNode* parent,
+        irr_dimension2df size ,
+        irr_vector3df position, int id=-1,
+        irr_SColor colorTop, irr_SColor colorBottom);
 
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addHillPlaneMesh(irr_ISceneManager* smgr, const char* name,
         irr_dimension2df tileSize, irr_dimension2du tileCount,
-        irr_SMaterial* material = 0, float hillHeight = 0.0f,
-        irr_dimension2df countHills = {0.0f, 0.0f},
-        irr_dimension2df textureRepeatCount = {1.0f, 1.0f});
+        irr_SMaterial* material, float hillHeight,
+        irr_dimension2df countHills,
+        irr_dimension2df textureRepeatCount);
 
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addTerrainMesh(irr_ISceneManager* smgr, const char* meshname,
         irr_IImage* texture, irr_IImage* heightmap,
-        irr_dimension2df stretchSize = {10.0f,10.0f},
-        float maxHeight=200.0f,
-        irr_dimension2du defaultVertexBlockSize = {64,64});
+        irr_dimension2df stretchSize,
+        float maxHeight,
+        irr_dimension2du defaultVertexBlockSize);
 
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addArrowMesh(irr_ISceneManager* smgr, const char* name,
-        irr_SColor vtxColorCylinder= {0xFFFFFFFF},
-        irr_SColor vtxColorCone= {0xFFFFFFFF},
-        unsigned int tesselationCylinder=4, unsigned int tesselationCone=8,
-        float height=1.f, float cylinderHeight=0.6f,
-        float widthCylinder=0.05f, float widthCone=0.3f);
+        irr_SColor vtxColorCylinder,
+        irr_SColor vtxColorCone,
+        unsigned int tesselationCylinder, unsigned int tesselationCone=8,
+        float height, float cylinderHeight,
+        float widthCylinder, float widthCone);
 
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addSphereMesh(irr_ISceneManager* smgr, const char* name,
-        float radius=5.f, unsigned int polyCountX = 16,
-        unsigned int polyCountY = 16);
+        float radius, unsigned int polyCountX,
+        unsigned int polyCountY);
 
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addVolumeLightMesh(irr_ISceneManager* smgr, const char* name,
-        const unsigned int SubdivideU = 32, const unsigned int SubdivideV = 32,
-        irr_SColor FootColor = {51, 0, 230, 180},
-        irr_SColor TailColor = {0, 0, 0, 0});
+        const unsigned int SubdivideU, const unsigned int SubdivideV,
+        irr_SColor FootColor,
+        irr_SColor TailColor);
 
 CIRRLICHT_API irr_ISceneNode* irr_ISceneManager_getRootSceneNode(irr_ISceneManager* smgr);
 
@@ -248,15 +291,15 @@ CIRRLICHT_API void irr_ISceneManager_getSceneNodesFromType(irr_ISceneManager* sm
         irr_ISceneNode* start=0);
 CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_getActiveCamera(irr_ISceneManager* smgr);
 CIRRLICHT_API void irr_ISceneManager_setActiveCamera(irr_ISceneManager* smgr, irr_ICameraSceneNode* camera);
-CIRRLICHT_API void irr_ISceneManager_setShadowColor(irr_ISceneManager* smgr, irr_SColor color = {150,0,0,0});
+CIRRLICHT_API void irr_ISceneManager_setShadowColor(irr_ISceneManager* smgr, irr_SColor color =);
 CIRRLICHT_API irr_SColor irr_ISceneManager_getShadowColor(irr_ISceneManager* smgr);
 CIRRLICHT_API unsigned int irr_ISceneManager_registerNodeForRendering(irr_ISceneManager* smgr, irr_ISceneNode* node,
-        E_SCENE_NODE_RENDER_PASS pass = ESNRP_AUTOMATIC);
+        E_SCENE_NODE_RENDER_PASS pass);
 
 CIRRLICHT_API void irr_ISceneManager_drawAll(irr_ISceneManager* smgr);
 CIRRLICHT_API irr_ISceneNodeAnimator* irr_ISceneManager_createRotationAnimator(irr_ISceneManager* smgr, irr_vector3df rotationSpeed);
 CIRRLICHT_API irr_ISceneNodeAnimator* irr_ISceneManager_createFlyCircleAnimator(irr_ISceneManager* smgr,
-        irr_vector3df center= {0.f,0.f,0.f},
+        irr_vector3df center,
         float radius=100.f, float speed=0.001f,
         irr_vector3df direction= {0.f, 1.f, 0.f},
         float startPosition = 0.f,

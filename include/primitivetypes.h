@@ -64,3 +64,5 @@ enum E_PRIMITIVE_TYPE
     //! The single vertices are expanded to quad billboards on the GPU.
     EPT_POINT_SPRITES
 };
+
+typedef enum E_PRIMITIVE_TYPE E_PRIMITIVE_TYPE;

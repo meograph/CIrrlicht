@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1DB07CA1E43C8E600C00372 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1DB07C91E43C8E600C00372 /* Info.plist */; };
+		A1DB07EC1E43C9F100C00372 /* animatedmesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07CC1E43C9F100C00372 /* animatedmesh.cpp */; };
+		A1DB07ED1E43C9F100C00372 /* animatedmeshmd2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07CD1E43C9F100C00372 /* animatedmeshmd2.cpp */; };
+		A1DB07EE1E43C9F100C00372 /* animatedmeshscenenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07CE1E43C9F100C00372 /* animatedmeshscenenode.cpp */; };
+		A1DB07EF1E43C9F100C00372 /* convertevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07CF1E43C9F100C00372 /* convertevent.cpp */; };
+		A1DB07F01E43C9F100C00372 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D01E43C9F100C00372 /* core.cpp */; };
+		A1DB07F11E43C9F100C00372 /* cursorcontrol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D11E43C9F100C00372 /* cursorcontrol.cpp */; };
+		A1DB07F21E43C9F100C00372 /* eventreceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D21E43C9F100C00372 /* eventreceiver.cpp */; };
+		A1DB07F31E43C9F100C00372 /* filearchive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D31E43C9F100C00372 /* filearchive.cpp */; };
+		A1DB07F51E43C9F100C00372 /* filesystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D51E43C9F100C00372 /* filesystem.cpp */; };
+		A1DB07F61E43C9F100C00372 /* gpuprogrammingservices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D61E43C9F100C00372 /* gpuprogrammingservices.cpp */; };
+		A1DB07F71E43C9F100C00372 /* guielement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D71E43C9F100C00372 /* guielement.cpp */; };
+		A1DB07F81E43C9F100C00372 /* guienvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D81E43C9F100C00372 /* guienvironment.cpp */; };
+		A1DB07F91E43C9F100C00372 /* guifont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D91E43C9F100C00372 /* guifont.cpp */; };
+		A1DB07FA1E43C9F100C00372 /* guiimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07DA1E43C9F100C00372 /* guiimage.cpp */; };
+		A1DB07FB1E43C9F100C00372 /* guistatictext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07DB1E43C9F100C00372 /* guistatictext.cpp */; };
+		A1DB07FC1E43C9F100C00372 /* imageloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07DC1E43C9F100C00372 /* imageloader.cpp */; };
+		A1DB07FD1E43C9F100C00372 /* imagewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07DD1E43C9F100C00372 /* imagewriter.cpp */; };
+		A1DB07FE1E43C9F100C00372 /* irrlichtdevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07DE1E43C9F100C00372 /* irrlichtdevice.cpp */; };
+		A1DB07FF1E43C9F100C00372 /* irrxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07DF1E43C9F100C00372 /* irrxml.cpp */; };
+		A1DB08001E43C9F100C00372 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E01E43C9F100C00372 /* logger.cpp */; };
+		A1DB08011E43C9F100C00372 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E11E43C9F100C00372 /* mesh.cpp */; };
+		A1DB08021E43C9F100C00372 /* meshscenenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E21E43C9F100C00372 /* meshscenenode.cpp */; };
+		A1DB08031E43C9F100C00372 /* osoperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E31E43C9F100C00372 /* osoperator.cpp */; };
+		A1DB08051E43C9F100C00372 /* readfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E51E43C9F100C00372 /* readfile.cpp */; };
+		A1DB08061E43C9F100C00372 /* scenemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E61E43C9F100C00372 /* scenemanager.cpp */; };
+		A1DB08071E43C9F100C00372 /* scenenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E71E43C9F100C00372 /* scenenode.cpp */; };
+		A1DB08081E43C9F100C00372 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E81E43C9F100C00372 /* timer.cpp */; };
+		A1DB08091E43C9F100C00372 /* videodriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E91E43C9F100C00372 /* videodriver.cpp */; };
+		A1DB080A1E43C9F100C00372 /* writefile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07EA1E43C9F100C00372 /* writefile.cpp */; };
+		A1DB080B1E43C9F100C00372 /* xmlwriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07EB1E43C9F100C00372 /* xmlwriter.cpp */; };
+		A1DB08991E43CFBB00C00372 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB08981E43CFBB00C00372 /* libIrrlicht.a */; };
+		A1DB089B1E43CFC400C00372 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB089A1E43CFC400C00372 /* UIKit.framework */; };
+		A1DB089D1E43CFCA00C00372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB089C1E43CFCA00C00372 /* Foundation.framework */; };
+		A1DB089F1E43CFCF00C00372 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB089E1E43CFCF00C00372 /* OpenGLES.framework */; };
+		A1DB08A01E43D08700C00372 /* randomizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07E41E43C9F100C00372 /* randomizer.cpp */; };
+		A1DB08A11E43D09900C00372 /* filelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1DB07D41E43C9F100C00372 /* filelist.cpp */; };
+		A1DB08A31E43D39800C00372 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB08A21E43D39800C00372 /* CoreMotion.framework */; };
+		A1DB08A51E43D3C100C00372 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB08A41E43D3C100C00372 /* QuartzCore.framework */; };
+		A1DB08A81E43D6CB00C00372 /* cirrlicht.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB07C11E43C52200C00372 /* cirrlicht.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F01E43E7CF00C00372 /* animatedmesh.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08AC1E43E7CF00C00372 /* animatedmesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F11E43E7CF00C00372 /* animatedmeshmd2.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08AD1E43E7CF00C00372 /* animatedmeshmd2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F21E43E7CF00C00372 /* animatedmeshscenenode.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08AE1E43E7CF00C00372 /* animatedmeshscenenode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F31E43E7CF00C00372 /* attributeexchangingobject.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08AF1E43E7CF00C00372 /* attributeexchangingobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F41E43E7CF00C00372 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B01E43E7CF00C00372 /* attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F51E43E7CF00C00372 /* attributestypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B11E43E7CF00C00372 /* attributestypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F61E43E7CF00C00372 /* cirrlicht.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B21E43E7CF00C00372 /* cirrlicht.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F71E43E7CF00C00372 /* color.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B31E43E7CF00C00372 /* color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F81E43E7CF00C00372 /* compileconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B41E43E7CF00C00372 /* compileconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08F91E43E7CF00C00372 /* convertevent.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B51E43E7CF00C00372 /* convertevent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08FA1E43E7CF00C00372 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B61E43E7CF00C00372 /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08FB1E43E7CF00C00372 /* cullingtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B71E43E7CF00C00372 /* cullingtypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08FC1E43E7CF00C00372 /* cursorcontrol.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B81E43E7CF00C00372 /* cursorcontrol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08FD1E43E7CF00C00372 /* debugscenetypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08B91E43E7CF00C00372 /* debugscenetypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08FE1E43E7CF00C00372 /* devicetypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08BA1E43E7CF00C00372 /* devicetypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB08FF1E43E7CF00C00372 /* driverfeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08BB1E43E7CF00C00372 /* driverfeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09001E43E7CF00C00372 /* drivertypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08BC1E43E7CF00C00372 /* drivertypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09011E43E7CF00C00372 /* eventreceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08BD1E43E7CF00C00372 /* eventreceiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09021E43E7CF00C00372 /* exposedvideodata.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08BE1E43E7CF00C00372 /* exposedvideodata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09031E43E7CF00C00372 /* filearchive.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08BF1E43E7CF00C00372 /* filearchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09041E43E7CF00C00372 /* filelist.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C01E43E7CF00C00372 /* filelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09051E43E7CF00C00372 /* filesystem.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C11E43E7CF00C00372 /* filesystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09061E43E7CF00C00372 /* focusflags.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C21E43E7CF00C00372 /* focusflags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09071E43E7CF00C00372 /* gpuprogrammingservices.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C31E43E7CF00C00372 /* gpuprogrammingservices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09081E43E7CF00C00372 /* guialignment.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C41E43E7CF00C00372 /* guialignment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09091E43E7CF00C00372 /* guielement.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C51E43E7CF00C00372 /* guielement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB090A1E43E7CF00C00372 /* guielementtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C61E43E7CF00C00372 /* guielementtypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB090B1E43E7CF00C00372 /* guienvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C71E43E7CF00C00372 /* guienvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB090C1E43E7CF00C00372 /* guifont.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C81E43E7CF00C00372 /* guifont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB090D1E43E7CF00C00372 /* guiimage.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08C91E43E7CF00C00372 /* guiimage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB090E1E43E7CF00C00372 /* guistatictext.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08CA1E43E7CF00C00372 /* guistatictext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB090F1E43E7CF00C00372 /* hardwarebufferflags.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08CB1E43E7CF00C00372 /* hardwarebufferflags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09101E43E7CF00C00372 /* imageloader.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08CC1E43E7CF00C00372 /* imageloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09111E43E7CF00C00372 /* imagewriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08CD1E43E7CF00C00372 /* imagewriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09121E43E7CF00C00372 /* irrlichtdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08CE1E43E7CF00C00372 /* irrlichtdevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09131E43E7CF00C00372 /* irrtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08CF1E43E7CF00C00372 /* irrtypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09141E43E7CF00C00372 /* irrxml.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D01E43E7CF00C00372 /* irrxml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09151E43E7CF00C00372 /* keycodes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D11E43E7CF00C00372 /* keycodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09161E43E7CF00C00372 /* keymap.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D21E43E7CF00C00372 /* keymap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09171E43E7CF00C00372 /* light.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D31E43E7CF00C00372 /* light.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09181E43E7CF00C00372 /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D41E43E7CF00C00372 /* logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09191E43E7CF00C00372 /* material.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D51E43E7CF00C00372 /* material.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB091A1E43E7CF00C00372 /* materialflags.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D61E43E7CF00C00372 /* materialflags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB091B1E43E7CF00C00372 /* materialrenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D71E43E7CF00C00372 /* materialrenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB091C1E43E7CF00C00372 /* materialtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D81E43E7CF00C00372 /* materialtypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB091D1E43E7CF00C00372 /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08D91E43E7CF00C00372 /* mesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB091E1E43E7CF00C00372 /* meshbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08DA1E43E7CF00C00372 /* meshbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB091F1E43E7CF00C00372 /* meshmanipulator.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08DB1E43E7CF00C00372 /* meshmanipulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09201E43E7CF00C00372 /* meshscenenode.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08DC1E43E7CF00C00372 /* meshscenenode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09211E43E7CF00C00372 /* meshwriteenums.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08DD1E43E7CF00C00372 /* meshwriteenums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09221E43E7CF00C00372 /* messageboxflags.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08DE1E43E7CF00C00372 /* messageboxflags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09231E43E7CF00C00372 /* osoperator.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08DF1E43E7CF00C00372 /* osoperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09241E43E7CF00C00372 /* primitivetypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E01E43E7CF00C00372 /* primitivetypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09251E43E7CF00C00372 /* randomizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E11E43E7CF00C00372 /* randomizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09261E43E7CF00C00372 /* readfile.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E21E43E7CF00C00372 /* readfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09271E43E7CF00C00372 /* scenemanager.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E31E43E7CF00C00372 /* scenemanager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09281E43E7CF00C00372 /* scenenode.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E41E43E7CF00C00372 /* scenenode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09291E43E7CF00C00372 /* scenenodeanimatortypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E51E43E7CF00C00372 /* scenenodeanimatortypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB092A1E43E7CF00C00372 /* scenenodetypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E61E43E7CF00C00372 /* scenenodetypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB092B1E43E7CF00C00372 /* shadertypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E71E43E7CF00C00372 /* shadertypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB092C1E43E7CF00C00372 /* terrainelements.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E81E43E7CF00C00372 /* terrainelements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB092D1E43E7CF00C00372 /* texture.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08E91E43E7CF00C00372 /* texture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB092E1E43E7CF00C00372 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08EA1E43E7CF00C00372 /* timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB092F1E43E7CF00C00372 /* vertex.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08EB1E43E7CF00C00372 /* vertex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09301E43E7CF00C00372 /* vertexindex.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08EC1E43E7CF00C00372 /* vertexindex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09311E43E7CF00C00372 /* videodriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08ED1E43E7CF00C00372 /* videodriver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09321E43E7CF00C00372 /* writefile.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08EE1E43E7CF00C00372 /* writefile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DB09331E43E7CF00C00372 /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DB08EF1E43E7CF00C00372 /* xmlwriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1DB07BE1E43C52200C00372 /* cirrlicht.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cirrlicht.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DB07C11E43C52200C00372 /* cirrlicht.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cirrlicht.h; path = ../cirrlicht.h; sourceTree = "<group>"; };
+		A1DB07C91E43C8E600C00372 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		A1DB07CC1E43C9F100C00372 /* animatedmesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = animatedmesh.cpp; sourceTree = "<group>"; };
+		A1DB07CD1E43C9F100C00372 /* animatedmeshmd2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = animatedmeshmd2.cpp; sourceTree = "<group>"; };
+		A1DB07CE1E43C9F100C00372 /* animatedmeshscenenode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = animatedmeshscenenode.cpp; sourceTree = "<group>"; };
+		A1DB07CF1E43C9F100C00372 /* convertevent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = convertevent.cpp; sourceTree = "<group>"; };
+		A1DB07D01E43C9F100C00372 /* core.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = core.cpp; sourceTree = "<group>"; };
+		A1DB07D11E43C9F100C00372 /* cursorcontrol.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = cursorcontrol.cpp; sourceTree = "<group>"; };
+		A1DB07D21E43C9F100C00372 /* eventreceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = eventreceiver.cpp; sourceTree = "<group>"; };
+		A1DB07D31E43C9F100C00372 /* filearchive.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = filearchive.cpp; sourceTree = "<group>"; };
+		A1DB07D41E43C9F100C00372 /* filelist.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = filelist.cpp; sourceTree = "<group>"; };
+		A1DB07D51E43C9F100C00372 /* filesystem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = filesystem.cpp; sourceTree = "<group>"; };
+		A1DB07D61E43C9F100C00372 /* gpuprogrammingservices.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = gpuprogrammingservices.cpp; sourceTree = "<group>"; };
+		A1DB07D71E43C9F100C00372 /* guielement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = guielement.cpp; sourceTree = "<group>"; };
+		A1DB07D81E43C9F100C00372 /* guienvironment.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = guienvironment.cpp; sourceTree = "<group>"; };
+		A1DB07D91E43C9F100C00372 /* guifont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = guifont.cpp; sourceTree = "<group>"; };
+		A1DB07DA1E43C9F100C00372 /* guiimage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = guiimage.cpp; sourceTree = "<group>"; };
+		A1DB07DB1E43C9F100C00372 /* guistatictext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = guistatictext.cpp; sourceTree = "<group>"; };
+		A1DB07DC1E43C9F100C00372 /* imageloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = imageloader.cpp; sourceTree = "<group>"; };
+		A1DB07DD1E43C9F100C00372 /* imagewriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = imagewriter.cpp; sourceTree = "<group>"; };
+		A1DB07DE1E43C9F100C00372 /* irrlichtdevice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = irrlichtdevice.cpp; sourceTree = "<group>"; };
+		A1DB07DF1E43C9F100C00372 /* irrxml.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = irrxml.cpp; sourceTree = "<group>"; };
+		A1DB07E01E43C9F100C00372 /* logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = logger.cpp; sourceTree = "<group>"; };
+		A1DB07E11E43C9F100C00372 /* mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = mesh.cpp; sourceTree = "<group>"; };
+		A1DB07E21E43C9F100C00372 /* meshscenenode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = meshscenenode.cpp; sourceTree = "<group>"; };
+		A1DB07E31E43C9F100C00372 /* osoperator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = osoperator.cpp; sourceTree = "<group>"; };
+		A1DB07E41E43C9F100C00372 /* randomizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = randomizer.cpp; sourceTree = "<group>"; };
+		A1DB07E51E43C9F100C00372 /* readfile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = readfile.cpp; sourceTree = "<group>"; };
+		A1DB07E61E43C9F100C00372 /* scenemanager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = scenemanager.cpp; sourceTree = "<group>"; };
+		A1DB07E71E43C9F100C00372 /* scenenode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = scenenode.cpp; sourceTree = "<group>"; };
+		A1DB07E81E43C9F100C00372 /* timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = timer.cpp; sourceTree = "<group>"; };
+		A1DB07E91E43C9F100C00372 /* videodriver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = videodriver.cpp; sourceTree = "<group>"; };
+		A1DB07EA1E43C9F100C00372 /* writefile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = writefile.cpp; sourceTree = "<group>"; };
+		A1DB07EB1E43C9F100C00372 /* xmlwriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = xmlwriter.cpp; sourceTree = "<group>"; };
+		A1DB08981E43CFBB00C00372 /* libIrrlicht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht.a; path = "../../../../Library/Developer/Xcode/DerivedData/FOV-fsbgkfhnhbyncdcmalwcrhuegmez/Build/Products/Debug-iphoneos/libIrrlicht.a"; sourceTree = "<group>"; };
+		A1DB089A1E43CFC400C00372 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1DB089C1E43CFCA00C00372 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1DB089E1E43CFCF00C00372 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A1DB08A21E43D39800C00372 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A1DB08A41E43D3C100C00372 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A1DB08AC1E43E7CF00C00372 /* animatedmesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animatedmesh.h; sourceTree = "<group>"; };
+		A1DB08AD1E43E7CF00C00372 /* animatedmeshmd2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animatedmeshmd2.h; sourceTree = "<group>"; };
+		A1DB08AE1E43E7CF00C00372 /* animatedmeshscenenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animatedmeshscenenode.h; sourceTree = "<group>"; };
+		A1DB08AF1E43E7CF00C00372 /* attributeexchangingobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributeexchangingobject.h; sourceTree = "<group>"; };
+		A1DB08B01E43E7CF00C00372 /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributes.h; sourceTree = "<group>"; };
+		A1DB08B11E43E7CF00C00372 /* attributestypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributestypes.h; sourceTree = "<group>"; };
+		A1DB08B21E43E7CF00C00372 /* cirrlicht.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cirrlicht.h; sourceTree = "<group>"; };
+		A1DB08B31E43E7CF00C00372 /* color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
+		A1DB08B41E43E7CF00C00372 /* compileconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compileconfig.h; sourceTree = "<group>"; };
+		A1DB08B51E43E7CF00C00372 /* convertevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convertevent.h; sourceTree = "<group>"; };
+		A1DB08B61E43E7CF00C00372 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		A1DB08B71E43E7CF00C00372 /* cullingtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cullingtypes.h; sourceTree = "<group>"; };
+		A1DB08B81E43E7CF00C00372 /* cursorcontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cursorcontrol.h; sourceTree = "<group>"; };
+		A1DB08B91E43E7CF00C00372 /* debugscenetypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debugscenetypes.h; sourceTree = "<group>"; };
+		A1DB08BA1E43E7CF00C00372 /* devicetypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = devicetypes.h; sourceTree = "<group>"; };
+		A1DB08BB1E43E7CF00C00372 /* driverfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = driverfeatures.h; sourceTree = "<group>"; };
+		A1DB08BC1E43E7CF00C00372 /* drivertypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drivertypes.h; sourceTree = "<group>"; };
+		A1DB08BD1E43E7CF00C00372 /* eventreceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventreceiver.h; sourceTree = "<group>"; };
+		A1DB08BE1E43E7CF00C00372 /* exposedvideodata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exposedvideodata.h; sourceTree = "<group>"; };
+		A1DB08BF1E43E7CF00C00372 /* filearchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filearchive.h; sourceTree = "<group>"; };
+		A1DB08C01E43E7CF00C00372 /* filelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filelist.h; sourceTree = "<group>"; };
+		A1DB08C11E43E7CF00C00372 /* filesystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filesystem.h; sourceTree = "<group>"; };
+		A1DB08C21E43E7CF00C00372 /* focusflags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = focusflags.h; sourceTree = "<group>"; };
+		A1DB08C31E43E7CF00C00372 /* gpuprogrammingservices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpuprogrammingservices.h; sourceTree = "<group>"; };
+		A1DB08C41E43E7CF00C00372 /* guialignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guialignment.h; sourceTree = "<group>"; };
+		A1DB08C51E43E7CF00C00372 /* guielement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guielement.h; sourceTree = "<group>"; };
+		A1DB08C61E43E7CF00C00372 /* guielementtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guielementtypes.h; sourceTree = "<group>"; };
+		A1DB08C71E43E7CF00C00372 /* guienvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guienvironment.h; sourceTree = "<group>"; };
+		A1DB08C81E43E7CF00C00372 /* guifont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guifont.h; sourceTree = "<group>"; };
+		A1DB08C91E43E7CF00C00372 /* guiimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guiimage.h; sourceTree = "<group>"; };
+		A1DB08CA1E43E7CF00C00372 /* guistatictext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guistatictext.h; sourceTree = "<group>"; };
+		A1DB08CB1E43E7CF00C00372 /* hardwarebufferflags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hardwarebufferflags.h; sourceTree = "<group>"; };
+		A1DB08CC1E43E7CF00C00372 /* imageloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageloader.h; sourceTree = "<group>"; };
+		A1DB08CD1E43E7CF00C00372 /* imagewriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imagewriter.h; sourceTree = "<group>"; };
+		A1DB08CE1E43E7CF00C00372 /* irrlichtdevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irrlichtdevice.h; sourceTree = "<group>"; };
+		A1DB08CF1E43E7CF00C00372 /* irrtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irrtypes.h; sourceTree = "<group>"; };
+		A1DB08D01E43E7CF00C00372 /* irrxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irrxml.h; sourceTree = "<group>"; };
+		A1DB08D11E43E7CF00C00372 /* keycodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keycodes.h; sourceTree = "<group>"; };
+		A1DB08D21E43E7CF00C00372 /* keymap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keymap.h; sourceTree = "<group>"; };
+		A1DB08D31E43E7CF00C00372 /* light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		A1DB08D41E43E7CF00C00372 /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		A1DB08D51E43E7CF00C00372 /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		A1DB08D61E43E7CF00C00372 /* materialflags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = materialflags.h; sourceTree = "<group>"; };
+		A1DB08D71E43E7CF00C00372 /* materialrenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = materialrenderer.h; sourceTree = "<group>"; };
+		A1DB08D81E43E7CF00C00372 /* materialtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = materialtypes.h; sourceTree = "<group>"; };
+		A1DB08D91E43E7CF00C00372 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		A1DB08DA1E43E7CF00C00372 /* meshbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshbuffer.h; sourceTree = "<group>"; };
+		A1DB08DB1E43E7CF00C00372 /* meshmanipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshmanipulator.h; sourceTree = "<group>"; };
+		A1DB08DC1E43E7CF00C00372 /* meshscenenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshscenenode.h; sourceTree = "<group>"; };
+		A1DB08DD1E43E7CF00C00372 /* meshwriteenums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshwriteenums.h; sourceTree = "<group>"; };
+		A1DB08DE1E43E7CF00C00372 /* messageboxflags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageboxflags.h; sourceTree = "<group>"; };
+		A1DB08DF1E43E7CF00C00372 /* osoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osoperator.h; sourceTree = "<group>"; };
+		A1DB08E01E43E7CF00C00372 /* primitivetypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitivetypes.h; sourceTree = "<group>"; };
+		A1DB08E11E43E7CF00C00372 /* randomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randomizer.h; sourceTree = "<group>"; };
+		A1DB08E21E43E7CF00C00372 /* readfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readfile.h; sourceTree = "<group>"; };
+		A1DB08E31E43E7CF00C00372 /* scenemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scenemanager.h; sourceTree = "<group>"; };
+		A1DB08E41E43E7CF00C00372 /* scenenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scenenode.h; sourceTree = "<group>"; };
+		A1DB08E51E43E7CF00C00372 /* scenenodeanimatortypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scenenodeanimatortypes.h; sourceTree = "<group>"; };
+		A1DB08E61E43E7CF00C00372 /* scenenodetypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scenenodetypes.h; sourceTree = "<group>"; };
+		A1DB08E71E43E7CF00C00372 /* shadertypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shadertypes.h; sourceTree = "<group>"; };
+		A1DB08E81E43E7CF00C00372 /* terrainelements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terrainelements.h; sourceTree = "<group>"; };
+		A1DB08E91E43E7CF00C00372 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		A1DB08EA1E43E7CF00C00372 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		A1DB08EB1E43E7CF00C00372 /* vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex.h; sourceTree = "<group>"; };
+		A1DB08EC1E43E7CF00C00372 /* vertexindex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertexindex.h; sourceTree = "<group>"; };
+		A1DB08ED1E43E7CF00C00372 /* videodriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videodriver.h; sourceTree = "<group>"; };
+		A1DB08EE1E43E7CF00C00372 /* writefile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writefile.h; sourceTree = "<group>"; };
+		A1DB08EF1E43E7CF00C00372 /* xmlwriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlwriter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1DB07BA1E43C52200C00372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DB08A51E43D3C100C00372 /* QuartzCore.framework in Frameworks */,
+				A1DB08A31E43D39800C00372 /* CoreMotion.framework in Frameworks */,
+				A1DB089F1E43CFCF00C00372 /* OpenGLES.framework in Frameworks */,
+				A1DB089D1E43CFCA00C00372 /* Foundation.framework in Frameworks */,
+				A1DB089B1E43CFC400C00372 /* UIKit.framework in Frameworks */,
+				A1DB08991E43CFBB00C00372 /* libIrrlicht.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1DB07B41E43C52200C00372 = {
+			isa = PBXGroup;
+			children = (
+				A1DB07C01E43C52200C00372 /* cirrlicht */,
+				A1DB07BF1E43C52200C00372 /* Products */,
+				A1DB08971E43CFBB00C00372 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1DB07BF1E43C52200C00372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB07BE1E43C52200C00372 /* cirrlicht.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1DB07C01E43C52200C00372 /* cirrlicht */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB08AB1E43E7CF00C00372 /* include */,
+				A1DB07CB1E43C9F100C00372 /* src */,
+				A1DB07C91E43C8E600C00372 /* Info.plist */,
+				A1DB07C11E43C52200C00372 /* cirrlicht.h */,
+			);
+			path = cirrlicht;
+			sourceTree = "<group>";
+		};
+		A1DB07CB1E43C9F100C00372 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB07CC1E43C9F100C00372 /* animatedmesh.cpp */,
+				A1DB07CD1E43C9F100C00372 /* animatedmeshmd2.cpp */,
+				A1DB07CE1E43C9F100C00372 /* animatedmeshscenenode.cpp */,
+				A1DB07CF1E43C9F100C00372 /* convertevent.cpp */,
+				A1DB07D01E43C9F100C00372 /* core.cpp */,
+				A1DB07D11E43C9F100C00372 /* cursorcontrol.cpp */,
+				A1DB07D21E43C9F100C00372 /* eventreceiver.cpp */,
+				A1DB07D31E43C9F100C00372 /* filearchive.cpp */,
+				A1DB07D41E43C9F100C00372 /* filelist.cpp */,
+				A1DB07D51E43C9F100C00372 /* filesystem.cpp */,
+				A1DB07D61E43C9F100C00372 /* gpuprogrammingservices.cpp */,
+				A1DB07D71E43C9F100C00372 /* guielement.cpp */,
+				A1DB07D81E43C9F100C00372 /* guienvironment.cpp */,
+				A1DB07D91E43C9F100C00372 /* guifont.cpp */,
+				A1DB07DA1E43C9F100C00372 /* guiimage.cpp */,
+				A1DB07DB1E43C9F100C00372 /* guistatictext.cpp */,
+				A1DB07DC1E43C9F100C00372 /* imageloader.cpp */,
+				A1DB07DD1E43C9F100C00372 /* imagewriter.cpp */,
+				A1DB07DE1E43C9F100C00372 /* irrlichtdevice.cpp */,
+				A1DB07DF1E43C9F100C00372 /* irrxml.cpp */,
+				A1DB07E01E43C9F100C00372 /* logger.cpp */,
+				A1DB07E11E43C9F100C00372 /* mesh.cpp */,
+				A1DB07E21E43C9F100C00372 /* meshscenenode.cpp */,
+				A1DB07E31E43C9F100C00372 /* osoperator.cpp */,
+				A1DB07E41E43C9F100C00372 /* randomizer.cpp */,
+				A1DB07E51E43C9F100C00372 /* readfile.cpp */,
+				A1DB07E61E43C9F100C00372 /* scenemanager.cpp */,
+				A1DB07E71E43C9F100C00372 /* scenenode.cpp */,
+				A1DB07E81E43C9F100C00372 /* timer.cpp */,
+				A1DB07E91E43C9F100C00372 /* videodriver.cpp */,
+				A1DB07EA1E43C9F100C00372 /* writefile.cpp */,
+				A1DB07EB1E43C9F100C00372 /* xmlwriter.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		A1DB08971E43CFBB00C00372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB08A41E43D3C100C00372 /* QuartzCore.framework */,
+				A1DB08A21E43D39800C00372 /* CoreMotion.framework */,
+				A1DB089E1E43CFCF00C00372 /* OpenGLES.framework */,
+				A1DB089C1E43CFCA00C00372 /* Foundation.framework */,
+				A1DB089A1E43CFC400C00372 /* UIKit.framework */,
+				A1DB08981E43CFBB00C00372 /* libIrrlicht.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1DB08AB1E43E7CF00C00372 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB08AC1E43E7CF00C00372 /* animatedmesh.h */,
+				A1DB08AD1E43E7CF00C00372 /* animatedmeshmd2.h */,
+				A1DB08AE1E43E7CF00C00372 /* animatedmeshscenenode.h */,
+				A1DB08AF1E43E7CF00C00372 /* attributeexchangingobject.h */,
+				A1DB08B01E43E7CF00C00372 /* attributes.h */,
+				A1DB08B11E43E7CF00C00372 /* attributestypes.h */,
+				A1DB08B21E43E7CF00C00372 /* cirrlicht.h */,
+				A1DB08B31E43E7CF00C00372 /* color.h */,
+				A1DB08B41E43E7CF00C00372 /* compileconfig.h */,
+				A1DB08B51E43E7CF00C00372 /* convertevent.h */,
+				A1DB08B61E43E7CF00C00372 /* core.h */,
+				A1DB08B71E43E7CF00C00372 /* cullingtypes.h */,
+				A1DB08B81E43E7CF00C00372 /* cursorcontrol.h */,
+				A1DB08B91E43E7CF00C00372 /* debugscenetypes.h */,
+				A1DB08BA1E43E7CF00C00372 /* devicetypes.h */,
+				A1DB08BB1E43E7CF00C00372 /* driverfeatures.h */,
+				A1DB08BC1E43E7CF00C00372 /* drivertypes.h */,
+				A1DB08BD1E43E7CF00C00372 /* eventreceiver.h */,
+				A1DB08BE1E43E7CF00C00372 /* exposedvideodata.h */,
+				A1DB08BF1E43E7CF00C00372 /* filearchive.h */,
+				A1DB08C01E43E7CF00C00372 /* filelist.h */,
+				A1DB08C11E43E7CF00C00372 /* filesystem.h */,
+				A1DB08C21E43E7CF00C00372 /* focusflags.h */,
+				A1DB08C31E43E7CF00C00372 /* gpuprogrammingservices.h */,
+				A1DB08C41E43E7CF00C00372 /* guialignment.h */,
+				A1DB08C51E43E7CF00C00372 /* guielement.h */,
+				A1DB08C61E43E7CF00C00372 /* guielementtypes.h */,
+				A1DB08C71E43E7CF00C00372 /* guienvironment.h */,
+				A1DB08C81E43E7CF00C00372 /* guifont.h */,
+				A1DB08C91E43E7CF00C00372 /* guiimage.h */,
+				A1DB08CA1E43E7CF00C00372 /* guistatictext.h */,
+				A1DB08CB1E43E7CF00C00372 /* hardwarebufferflags.h */,
+				A1DB08CC1E43E7CF00C00372 /* imageloader.h */,
+				A1DB08CD1E43E7CF00C00372 /* imagewriter.h */,
+				A1DB08CE1E43E7CF00C00372 /* irrlichtdevice.h */,
+				A1DB08CF1E43E7CF00C00372 /* irrtypes.h */,
+				A1DB08D01E43E7CF00C00372 /* irrxml.h */,
+				A1DB08D11E43E7CF00C00372 /* keycodes.h */,
+				A1DB08D21E43E7CF00C00372 /* keymap.h */,
+				A1DB08D31E43E7CF00C00372 /* light.h */,
+				A1DB08D41E43E7CF00C00372 /* logger.h */,
+				A1DB08D51E43E7CF00C00372 /* material.h */,
+				A1DB08D61E43E7CF00C00372 /* materialflags.h */,
+				A1DB08D71E43E7CF00C00372 /* materialrenderer.h */,
+				A1DB08D81E43E7CF00C00372 /* materialtypes.h */,
+				A1DB08D91E43E7CF00C00372 /* mesh.h */,
+				A1DB08DA1E43E7CF00C00372 /* meshbuffer.h */,
+				A1DB08DB1E43E7CF00C00372 /* meshmanipulator.h */,
+				A1DB08DC1E43E7CF00C00372 /* meshscenenode.h */,
+				A1DB08DD1E43E7CF00C00372 /* meshwriteenums.h */,
+				A1DB08DE1E43E7CF00C00372 /* messageboxflags.h */,
+				A1DB08DF1E43E7CF00C00372 /* osoperator.h */,
+				A1DB08E01E43E7CF00C00372 /* primitivetypes.h */,
+				A1DB08E11E43E7CF00C00372 /* randomizer.h */,
+				A1DB08E21E43E7CF00C00372 /* readfile.h */,
+				A1DB08E31E43E7CF00C00372 /* scenemanager.h */,
+				A1DB08E41E43E7CF00C00372 /* scenenode.h */,
+				A1DB08E51E43E7CF00C00372 /* scenenodeanimatortypes.h */,
+				A1DB08E61E43E7CF00C00372 /* scenenodetypes.h */,
+				A1DB08E71E43E7CF00C00372 /* shadertypes.h */,
+				A1DB08E81E43E7CF00C00372 /* terrainelements.h */,
+				A1DB08E91E43E7CF00C00372 /* texture.h */,
+				A1DB08EA1E43E7CF00C00372 /* timer.h */,
+				A1DB08EB1E43E7CF00C00372 /* vertex.h */,
+				A1DB08EC1E43E7CF00C00372 /* vertexindex.h */,
+				A1DB08ED1E43E7CF00C00372 /* videodriver.h */,
+				A1DB08EE1E43E7CF00C00372 /* writefile.h */,
+				A1DB08EF1E43E7CF00C00372 /* xmlwriter.h */,
+			);
+			name = include;
+			path = ../../include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A1DB07BB1E43C52200C00372 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DB09211E43E7CF00C00372 /* meshwriteenums.h in Headers */,
+				A1DB08FB1E43E7CF00C00372 /* cullingtypes.h in Headers */,
+				A1DB09221E43E7CF00C00372 /* messageboxflags.h in Headers */,
+				A1DB09021E43E7CF00C00372 /* exposedvideodata.h in Headers */,
+				A1DB08FD1E43E7CF00C00372 /* debugscenetypes.h in Headers */,
+				A1DB090C1E43E7CF00C00372 /* guifont.h in Headers */,
+				A1DB09011E43E7CF00C00372 /* eventreceiver.h in Headers */,
+				A1DB09281E43E7CF00C00372 /* scenenode.h in Headers */,
+				A1DB091C1E43E7CF00C00372 /* materialtypes.h in Headers */,
+				A1DB09191E43E7CF00C00372 /* material.h in Headers */,
+				A1DB090B1E43E7CF00C00372 /* guienvironment.h in Headers */,
+				A1DB09171E43E7CF00C00372 /* light.h in Headers */,
+				A1DB091E1E43E7CF00C00372 /* meshbuffer.h in Headers */,
+				A1DB08F81E43E7CF00C00372 /* compileconfig.h in Headers */,
+				A1DB091F1E43E7CF00C00372 /* meshmanipulator.h in Headers */,
+				A1DB09121E43E7CF00C00372 /* irrlichtdevice.h in Headers */,
+				A1DB08F91E43E7CF00C00372 /* convertevent.h in Headers */,
+				A1DB08F11E43E7CF00C00372 /* animatedmeshmd2.h in Headers */,
+				A1DB08F21E43E7CF00C00372 /* animatedmeshscenenode.h in Headers */,
+				A1DB092C1E43E7CF00C00372 /* terrainelements.h in Headers */,
+				A1DB08F51E43E7CF00C00372 /* attributestypes.h in Headers */,
+				A1DB092B1E43E7CF00C00372 /* shadertypes.h in Headers */,
+				A1DB09051E43E7CF00C00372 /* filesystem.h in Headers */,
+				A1DB09161E43E7CF00C00372 /* keymap.h in Headers */,
+				A1DB09321E43E7CF00C00372 /* writefile.h in Headers */,
+				A1DB08F71E43E7CF00C00372 /* color.h in Headers */,
+				A1DB092A1E43E7CF00C00372 /* scenenodetypes.h in Headers */,
+				A1DB08FE1E43E7CF00C00372 /* devicetypes.h in Headers */,
+				A1DB09081E43E7CF00C00372 /* guialignment.h in Headers */,
+				A1DB09071E43E7CF00C00372 /* gpuprogrammingservices.h in Headers */,
+				A1DB09291E43E7CF00C00372 /* scenenodeanimatortypes.h in Headers */,
+				A1DB09331E43E7CF00C00372 /* xmlwriter.h in Headers */,
+				A1DB08F31E43E7CF00C00372 /* attributeexchangingobject.h in Headers */,
+				A1DB090A1E43E7CF00C00372 /* guielementtypes.h in Headers */,
+				A1DB09041E43E7CF00C00372 /* filelist.h in Headers */,
+				A1DB09271E43E7CF00C00372 /* scenemanager.h in Headers */,
+				A1DB09261E43E7CF00C00372 /* readfile.h in Headers */,
+				A1DB092D1E43E7CF00C00372 /* texture.h in Headers */,
+				A1DB09201E43E7CF00C00372 /* meshscenenode.h in Headers */,
+				A1DB09111E43E7CF00C00372 /* imagewriter.h in Headers */,
+				A1DB08F01E43E7CF00C00372 /* animatedmesh.h in Headers */,
+				A1DB09061E43E7CF00C00372 /* focusflags.h in Headers */,
+				A1DB09031E43E7CF00C00372 /* filearchive.h in Headers */,
+				A1DB09131E43E7CF00C00372 /* irrtypes.h in Headers */,
+				A1DB08F61E43E7CF00C00372 /* cirrlicht.h in Headers */,
+				A1DB09301E43E7CF00C00372 /* vertexindex.h in Headers */,
+				A1DB090E1E43E7CF00C00372 /* guistatictext.h in Headers */,
+				A1DB090D1E43E7CF00C00372 /* guiimage.h in Headers */,
+				A1DB09231E43E7CF00C00372 /* osoperator.h in Headers */,
+				A1DB08FC1E43E7CF00C00372 /* cursorcontrol.h in Headers */,
+				A1DB090F1E43E7CF00C00372 /* hardwarebufferflags.h in Headers */,
+				A1DB09181E43E7CF00C00372 /* logger.h in Headers */,
+				A1DB091B1E43E7CF00C00372 /* materialrenderer.h in Headers */,
+				A1DB09241E43E7CF00C00372 /* primitivetypes.h in Headers */,
+				A1DB09091E43E7CF00C00372 /* guielement.h in Headers */,
+				A1DB09311E43E7CF00C00372 /* videodriver.h in Headers */,
+				A1DB08FF1E43E7CF00C00372 /* driverfeatures.h in Headers */,
+				A1DB09151E43E7CF00C00372 /* keycodes.h in Headers */,
+				A1DB09141E43E7CF00C00372 /* irrxml.h in Headers */,
+				A1DB091D1E43E7CF00C00372 /* mesh.h in Headers */,
+				A1DB092F1E43E7CF00C00372 /* vertex.h in Headers */,
+				A1DB09101E43E7CF00C00372 /* imageloader.h in Headers */,
+				A1DB08FA1E43E7CF00C00372 /* core.h in Headers */,
+				A1DB08A81E43D6CB00C00372 /* cirrlicht.h in Headers */,
+				A1DB091A1E43E7CF00C00372 /* materialflags.h in Headers */,
+				A1DB09001E43E7CF00C00372 /* drivertypes.h in Headers */,
+				A1DB08F41E43E7CF00C00372 /* attributes.h in Headers */,
+				A1DB092E1E43E7CF00C00372 /* timer.h in Headers */,
+				A1DB09251E43E7CF00C00372 /* randomizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A1DB07BD1E43C52200C00372 /* cirrlicht */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DB07C61E43C52200C00372 /* Build configuration list for PBXNativeTarget "cirrlicht" */;
+			buildPhases = (
+				A1DB07B91E43C52200C00372 /* Sources */,
+				A1DB07BA1E43C52200C00372 /* Frameworks */,
+				A1DB07BB1E43C52200C00372 /* Headers */,
+				A1DB07BC1E43C52200C00372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cirrlicht;
+			productName = cirrlicht;
+			productReference = A1DB07BE1E43C52200C00372 /* cirrlicht.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1DB07B51E43C52200C00372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Flippy;
+				TargetAttributes = {
+					A1DB07BD1E43C52200C00372 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S2G5LG6898;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A1DB07B81E43C52200C00372 /* Build configuration list for PBXProject "cirrlicht" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1DB07B41E43C52200C00372;
+			productRefGroup = A1DB07BF1E43C52200C00372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1DB07BD1E43C52200C00372 /* cirrlicht */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DB07BC1E43C52200C00372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DB07CA1E43C8E600C00372 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1DB07B91E43C52200C00372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DB07EF1E43C9F100C00372 /* convertevent.cpp in Sources */,
+				A1DB07F11E43C9F100C00372 /* cursorcontrol.cpp in Sources */,
+				A1DB08071E43C9F100C00372 /* scenenode.cpp in Sources */,
+				A1DB07FE1E43C9F100C00372 /* irrlichtdevice.cpp in Sources */,
+				A1DB07F61E43C9F100C00372 /* gpuprogrammingservices.cpp in Sources */,
+				A1DB08031E43C9F100C00372 /* osoperator.cpp in Sources */,
+				A1DB08091E43C9F100C00372 /* videodriver.cpp in Sources */,
+				A1DB07FB1E43C9F100C00372 /* guistatictext.cpp in Sources */,
+				A1DB07F31E43C9F100C00372 /* filearchive.cpp in Sources */,
+				A1DB08081E43C9F100C00372 /* timer.cpp in Sources */,
+				A1DB080B1E43C9F100C00372 /* xmlwriter.cpp in Sources */,
+				A1DB07FD1E43C9F100C00372 /* imagewriter.cpp in Sources */,
+				A1DB08011E43C9F100C00372 /* mesh.cpp in Sources */,
+				A1DB07F51E43C9F100C00372 /* filesystem.cpp in Sources */,
+				A1DB07FC1E43C9F100C00372 /* imageloader.cpp in Sources */,
+				A1DB07F71E43C9F100C00372 /* guielement.cpp in Sources */,
+				A1DB07EE1E43C9F100C00372 /* animatedmeshscenenode.cpp in Sources */,
+				A1DB07EC1E43C9F100C00372 /* animatedmesh.cpp in Sources */,
+				A1DB07FF1E43C9F100C00372 /* irrxml.cpp in Sources */,
+				A1DB07F01E43C9F100C00372 /* core.cpp in Sources */,
+				A1DB08A01E43D08700C00372 /* randomizer.cpp in Sources */,
+				A1DB080A1E43C9F100C00372 /* writefile.cpp in Sources */,
+				A1DB07F91E43C9F100C00372 /* guifont.cpp in Sources */,
+				A1DB07F81E43C9F100C00372 /* guienvironment.cpp in Sources */,
+				A1DB07F21E43C9F100C00372 /* eventreceiver.cpp in Sources */,
+				A1DB08A11E43D09900C00372 /* filelist.cpp in Sources */,
+				A1DB08001E43C9F100C00372 /* logger.cpp in Sources */,
+				A1DB07FA1E43C9F100C00372 /* guiimage.cpp in Sources */,
+				A1DB08051E43C9F100C00372 /* readfile.cpp in Sources */,
+				A1DB08061E43C9F100C00372 /* scenemanager.cpp in Sources */,
+				A1DB07ED1E43C9F100C00372 /* animatedmeshmd2.cpp in Sources */,
+				A1DB08021E43C9F100C00372 /* meshscenenode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1DB07C41E43C52200C00372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1DB07C51E43C52200C00372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1DB07C71E43C52200C00372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S2G5LG6898;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../irrlicht/include";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flippy.cirrlicht;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1DB07C81E43C52200C00372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S2G5LG6898;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../irrlicht/include";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flippy.cirrlicht;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1DB07B81E43C52200C00372 /* Build configuration list for PBXProject "cirrlicht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DB07C41E43C52200C00372 /* Debug */,
+				A1DB07C51E43C52200C00372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DB07C61E43C52200C00372 /* Build configuration list for PBXNativeTarget "cirrlicht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DB07C71E43C52200C00372 /* Debug */,
+				A1DB07C81E43C52200C00372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1DB07B51E43C52200C00372 /* Project object */;
+}

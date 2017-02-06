@@ -31,3 +31,4 @@ enum E_INDEX_TYPE
 	EIT_16BIT = 0,
 	EIT_32BIT
 };
+typedef enum E_INDEX_TYPE E_INDEX_TYPE;

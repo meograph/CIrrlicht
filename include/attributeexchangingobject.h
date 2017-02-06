@@ -33,3 +33,5 @@ struct irr_SAttributeReadWriteOptions {
 	//! Optional filename
 	const char* Filename;
 };
+
+typedef struct irr_SAttributeReadWriteOptions irr_SAttributeReadWriteOptions;

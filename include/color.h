@@ -85,6 +85,7 @@ enum ECOLOR_FORMAT
 	//! Unknown color format:
 	ECF_UNKNOWN
 };
+typedef enum ECOLOR_FORMAT ECOLOR_FORMAT;
 
 struct irr_SColor
 {

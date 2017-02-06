@@ -111,3 +111,5 @@ enum ESCENE_NODE_TYPE
 	//! Will match with any scene node when checking types
 	ESNT_ANY            = MAKE_CIRR_ID('a','n','y','_')
 };
+
+typedef enum ESCENE_NODE_TYPE ESCENE_NODE_TYPE;
