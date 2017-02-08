@@ -250,7 +250,7 @@ CIRRLICHT_API irr_ITextSceneNode* irr_ISceneManager_addTextSceneNode(irr_ISceneM
 CIRRLICHT_API irr_IBillboardTextSceneNode* irr_ISceneManager_addBillboardTextSceneNode(irr_ISceneManager* smgr, irr_IGUIFont* font, const wchar_t* text,
         irr_ISceneNode* parent,
         irr_dimension2df size ,
-        irr_vector3df position, int id=-1,
+        irr_vector3df position, int id,
         irr_SColor colorTop, irr_SColor colorBottom);
 
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addHillPlaneMesh(irr_ISceneManager* smgr, const char* name,
@@ -268,7 +268,7 @@ CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addTerrainMesh(irr_ISceneMana
 CIRRLICHT_API irr_IAnimatedMesh* irr_ISceneManager_addArrowMesh(irr_ISceneManager* smgr, const char* name,
         irr_SColor vtxColorCylinder,
         irr_SColor vtxColorCone,
-        unsigned int tesselationCylinder, unsigned int tesselationCone=8,
+        unsigned int tesselationCylinder, unsigned int tesselationCone,
         float height, float cylinderHeight,
         float widthCylinder, float widthCone);
 
@@ -291,7 +291,7 @@ CIRRLICHT_API void irr_ISceneManager_getSceneNodesFromType(irr_ISceneManager* sm
         irr_ISceneNode* start=0);
 CIRRLICHT_API irr_ICameraSceneNode* irr_ISceneManager_getActiveCamera(irr_ISceneManager* smgr);
 CIRRLICHT_API void irr_ISceneManager_setActiveCamera(irr_ISceneManager* smgr, irr_ICameraSceneNode* camera);
-CIRRLICHT_API void irr_ISceneManager_setShadowColor(irr_ISceneManager* smgr, irr_SColor color =);
+CIRRLICHT_API void irr_ISceneManager_setShadowColor(irr_ISceneManager* smgr, irr_SColor color);
 CIRRLICHT_API irr_SColor irr_ISceneManager_getShadowColor(irr_ISceneManager* smgr);
 CIRRLICHT_API unsigned int irr_ISceneManager_registerNodeForRendering(irr_ISceneManager* smgr, irr_ISceneNode* node,
         E_SCENE_NODE_RENDER_PASS pass);
